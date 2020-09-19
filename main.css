@@ -1,0 +1,114 @@
+
+.header{
+    padding: 12px;
+    text-align: left;
+    background: brown;
+    color: white;
+    font-size: 20px;
+    width:98.5%;
+}
+
+
+.form-info{
+    border: 5px solid burlywood;
+    margin: 6px;
+    padding: 5px;
+    background: rgb(240, 135, 135);
+    width: 50%;
+    align-self: center;
+    margin-left: 320px;
+    margin-right: 200px;
+    padding:6px;
+    font-weight: bolder;
+
+}
+
+
+.form-info .form-field input{
+    width: 80%;
+    padding: 9px 8px;
+    flex: 5 2;
+    margin: 2%;
+}
+
+/* .form-info .addDetails input{
+    background: rgb(172, 55, 55);
+    color:white;
+    align-self: center;
+    flex: 3 1;
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    border:none;
+    width: 40%;
+    margin-left:150px ;
+} */
+.form-info .form-field select{
+    padding:9px 8px;
+    width: 80%;
+    flex: 5 2;
+    margin: 2%;
+}
+
+
+.dynamic-form {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.dynamic-form p{
+    font-size:8.5pt;
+}
+
+
+.fixed-form {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 8.5pt;
+    font-weight:bold;
+    padding:2px;
+}
+
+.fixed-form p{
+    font-weight:normal;
+}
+
+.fixed-form li{
+    list-style: none;
+    font-weight: normal;
+    padding:2px;
+    margin-left: -40;
+}
+.fixed-form .work{
+    list-style: circle;
+    list-style-image: solid black ;
+    margin-left: -30;
+    padding:0;
+    color: solid black;
+}
+
+
+.fixed-form .loc{
+   text-align: right;
+   margin-left: 20%;
+}
+
+.fixed-form .year{
+    text-align: right;
+}
+
+.Change{
+    background: rgb(172, 55, 55);
+    color:white;
+    align-self: center;
+    flex: 3 1;
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    border:none;
+    width: 20%;
+    margin-left:500px ;
+}
+
+.field-red{
+    border: 5px solid red;
+}
