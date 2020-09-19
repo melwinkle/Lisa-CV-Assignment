@@ -24,7 +24,7 @@
 }
 
 
-.form-info .form-field input{
+.form-info  input{
     width: 80%;
     padding: 9px 8px;
     flex: 5 2;
@@ -43,7 +43,7 @@
     width: 40%;
     margin-left:150px ;
 } */
-.form-info .form-field select{
+.form-info  select{
     padding:9px 8px;
     width: 80%;
     flex: 5 2;
