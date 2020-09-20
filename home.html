@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Final CV</title>
+        <link rel="stylesheet" href="main.css">
+        
+    </head>
+    <body>
+        <div class="header">
+            <p>
+            <img src="ashesi.jpg" alt="Ashesi" style="margin:0 5px; height: 50px;float:left; ">
+            Ashesi CV Form
+        </p>
+        </div>
+
+        <h1>Sign Up</h1>
+        <form class=form-info action="info.html">
+            <label for="fname">First Name</label><br>
+            <input type="text" name="fname" id="f_name"><br>
+
+            <label for="mname">Middle Name(s)</label><br>
+            <input type="text" name="mname" id="m_name"><br>
+
+            <label for="lname">Surname</label><br>
+            <input type="text" name="lname" id="l_name" placeholder="surname"><br>
+
+            <label for="address">Postal Address</label><br>
+            <input type="text" name="address" id="myadd" placeholder="address"><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" name="mail" id="mymail" placeholder="email"><br>
+
+            <label for="number">Mobile Number</label><br>
+            <input type="tel" name="number" id="mynum" placeholder="number"><br> 
+            
+            <label for="gender">Gender</label><br>
+            <select name="gender" id="gender" required>
+                <option style="display:none;">Select an Option</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select><br>
+            
+            <input type="submit" name="button" id="sender" onclick="passvalue()">
+
+
+            <script type="text/javascript" src="test.js"></script>
+        </form>
+    </body>
+</html>
