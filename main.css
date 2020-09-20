@@ -88,13 +88,7 @@
     display:none;
 }
 
-.form-info .form-valid p{
-    font:Verdana;
-    color:red;
-    display: none;
-    margin-bottom:10px;
-    margin-top:10px;
-}
+
 
 
 .dynamic-form {
@@ -102,6 +96,7 @@
     text-align: center;
     margin-top:0;
     padding:0;
+    margin-bottom: 50px;
 }
 
 .dynamic-form p{
@@ -133,8 +128,7 @@
     margin-left: -40;
 }
 .fixed-form .work{
-    list-style: circle;
-    list-style-image: solid black ;
+    list-style-type: disc;
     margin-left: -30;
     padding:0;
     color: solid black;

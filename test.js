@@ -1,29 +1,10 @@
 
     function handleSubmit(){
-        checkData();
         passvalue();
     }
 
 
-    function checkData(){
-       if(BlurFName()){
-           if(BlurMName()){
-               if(BlurLName()){
-                   if(checkGender()){
-                       if(BlurAddress()){
-                           if(BlurMail()){
-                               if(BlurPhone()){
-                                document.getElementById("Valid").style.display="inline";
-                               }
-                           }
-                       }
-                   }
-               }
-           }
-       }
-        return false;
-
-    };
+    
 
     function checkNumber(){
         let num_len=/^[0-9]+$/;
@@ -140,17 +121,21 @@
     }
 
 
-    function checkGender(){
-        let gender=document.getElementById("gender");
-        if(gender.value=="Select an Option"){
-            document.getElementById("gender_em").style.display = "inline";
-            return false;
-        }
-        else{
-            document.getElementById("gender_em").style.display = "none";
-            return true;
-            }
-    };
+    // function checkGender(){
+    //     let gender=document.getElementById("gender");
+    //     if(gender.value=="Select an Option"){
+    //         document.getElementById("gender_em").style.display = "inline";
+    //         return false;
+    //     }
+    // };
+
+    // function BlurGender(){
+    //     let gender=document.getElementById("gender");
+    //     if((gender.value=="Male")||(gender.value=="Female")){
+    //         document.getElementById("gender_em").style.display = "none";
+    //         return true;
+    //         }
+    // };
 
    
     function passvalue(){

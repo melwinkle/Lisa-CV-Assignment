@@ -14,15 +14,13 @@
 
 
         <div>
-        <form class=form-info action="info.html" onsubmit="return checkData()">
+        <form class=form-info action="cv.html" onsubmit="return checkData()">
             <div class="f-header">
                 Sign Up</div>
             
        
 
-            <div class="form-valid" >
-                <p id="Valid">All Fields are Valid</p>
-            </div>
+            
             <div class="bdetails">
             <label for="fname">First Name</label><br>
             <input type="text" name="fname" id="f_name" placeholder="First Name" onfocus="checkFName()" onblur="BlurFName()" required><br>
@@ -43,7 +41,7 @@
 
         <div class="gdetails">
             <label for="gender">Gender</label><br>
-            <select name="gender" id="gender" onfocus="checkGender()" required>
+            <select name="gender" id="gender"  required>
                 <option  style="display:none;">Select an Option</option>
                 <option value="male">Male</option>
                 <option value="female">Female</option>

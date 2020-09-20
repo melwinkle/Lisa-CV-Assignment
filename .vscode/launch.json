@@ -7,8 +7,8 @@
         {
             "type": "pwa-chrome",
             "request": "launch",
-            "name": "Open home.html",
-            "file": "c:\\Users\\ADZO\\Desktop\\Ashesi Work\\THIRD YEAR\\Fall Semester\\WEBB TECH\\Labs\\testjs\\home.html"
+            "name": "Open index.html",
+            "file": "c:\\Users\\ADZO\\Desktop\\Ashesi Work\\THIRD YEAR\\Fall Semester\\WEBB TECH\\Labs\\testjs\\index.html"
         }
     ]
 }
