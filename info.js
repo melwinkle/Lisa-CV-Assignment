@@ -29,13 +29,35 @@ return false;
 function validate(){
     let pattern=/a-zA-z /;
     let first=document.getElementById("f_name").value;
+    let middle=document.getElementById("m_name").value;
+    let last=document.getElementById("l_name").value;
 
     if(!first.match(pattern)){
         document.getElementById("First_em").style.display = "inline";
         return false;
     }
+    if(!middle.match(pattern)){
+        document.getElementById("Middle_em").style.display = "inline";
+        return false;
+    }
+    if(!last.match(pattern)){
+        document.getElementById("Last_em").style.display = "inline";
+        return false;
+    }
+
     else{
+        if(first.match(patten)){
         document.getElementById("First_em").style.display = "none";
         return true;
+        }
+        if(middle.match(patten)){
+            document.getElementById("Middle_em").style.display = "none";
+            return true;
+        }
+        if(last.match(patten)){
+            document.getElementById("Last_em").style.display = "none";
+            return true;
+        }
+
     }
 }
