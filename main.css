@@ -96,15 +96,11 @@ body {
     margin-left:15px;
 }
 
-.full-form .form-info .field-red{
-    border:5px solid red;
-}
 
-.full-form .form-info .field-gree{
-    border:5px solid green;
-}
 
-/* .full-form .form-info .bdetails .error_message{
+
+
+.full-form .form-info .bdetails .error_message{
     font-family:'Times New Roman', Times, serif;
     color: red;
     font-size: 9pt;
@@ -125,7 +121,7 @@ body {
     margin-bottom: 2%;
     padding:0;
     display:none;
-} */
+}
 
 
 

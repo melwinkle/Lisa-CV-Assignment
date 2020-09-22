@@ -18,28 +18,18 @@ function finaldata(){
 
 
 function validate(){
-    if (!valid_name(first)) {
-		alert("Error");
-	} 
+    if (valid_fname()) {
+		
+    if (valid_mname() ){
+    if (valid_lname()) {
+		
+    if (valid_number()) {
     
-    if (!valid_name(middle)) {
-		alert("Error!");
-	} 
-    if (!valid_name(last)) {
-		alert("Error!");
-	} 
-    
-
-    if (!valid_number(phone)) {
-		alert("error!");
-	} 
-    
-    if (!valid_post(postal)) {
-		alert("Error!")
-	} 
-    if (!valid_mail(mail)) {
-		alert("error!");
-	} 
+    if (valid_post()) {
+    if (valid_mail()) {
+    }}}}}
+    }
+    return true; 
 }
 
 
@@ -72,40 +62,50 @@ return false;
 
 
 
-function valid_mail(mail){
+function valid_mail(){
     let pat_mail=/([a-z])([.]?[a-z])*@(ashesi.edu.gh)$/;
     if(mail.match(pat_mail)){
         return true;
     }
+    else{
+        document.getElementById("number_em").style.display = "inline";
+        return false;
+    }
 }
 
-function valid_post(postal){
+function valid_post(){
     let pat_post=/0-9a-zA-Z ]/;
     if(postal.match(pat_post)){
         return true;
     }
 
 }
-function valid_number(numb){
+function valid_number(){
     let pat_num= /^([0-9]{0,2})[0-9]/;
-    if(numb.match(pat_num)){
+    if(phone.match(pat_num)){
         return true;
     }
 }
-function valid_name(name){
+function valid_fname(){
     let pat_name=/a-zA-z\s-/;
-    if(name.match(pat_name)){
+    if(first.match(pat_name)){
+        return true;
+    }
+}
+function valid_mname(){
+    let pat_name=/a-zA-z\s-/;
+    if(middle.match(pat_name)){
+        return true;
+    }
+}
+function valid_lname(){
+    let pat_name=/a-zA-z\s-/;
+    if(last.match(pat_name)){
         return true;
     }
 }
     
-function Error(input) {
-	input.className=input.className.replace("field-red");
-}
-
-function Valid(input) {
-	input.className=input.className.replace("field-red","field-green");
-}    
+   
         
         
     
