@@ -13,7 +13,7 @@
             document.getElementById("number_em").style.display = "inline";
             return true;
         }
-    };
+    }
 
         function BlurPhone(){
             let num_len=/0-9a-zA-Z ]/;
@@ -22,7 +22,7 @@
                 document.getElementById("number_em").style.display = "none";
             return false;
         }
-    };
+    }
 
 
     function checkFName(){
@@ -32,7 +32,7 @@
             document.getElementById("First_em").style.display = "inline";
             return true;
         } 
-    };
+    }
     function BlurFName(){   
         let name_len=/^[a-zA-Z\s-]+$/;
         let fname= document.getElementById("f_name");
@@ -42,7 +42,7 @@
             return false;
         }
     
-};
+}
 
     function checkMName(){
         let name_len=/^[a-zA-Z\s-]+$/;
@@ -51,7 +51,7 @@
                 document.getElementById("Middle_em").style.display = "inline";
                 return true;
             }
-        };
+        }
         function BlurMName(){
             let name_len=/^[a-zA-Z\s-]+$/;
             let mname= document.getElementById("m_name");
@@ -59,7 +59,7 @@
                     document.getElementById("Middle_em").style.display = "none";
                 return false;
             }
-        };
+        }
 
     function checkLName(){
         let name_len=/^[a-zA-Z\s-]+$/;
@@ -69,7 +69,7 @@
             document.getElementById("Surname_em").style.display = "inline";
             return;
         }
-    };
+    }
 
     function BlurLName(){
         let name_len=/^[a-zA-Z\s-]+$/;
@@ -80,7 +80,7 @@
             return;     
                 }
                
-    };
+    }
 
 
     function CheckAddress(){
@@ -90,7 +90,7 @@
             document.getElementById("address_em").style.display = "inline";
             return true;
         }
-    };
+    }
 
     function BlurAddress(){
         let addr_len=/^[0-9a-zA-Z]+$/;
@@ -99,20 +99,21 @@
             document.getElementById("address_em").style.display = "none";
             return;
           }
-        };
+        }
    
 
     function checkEmail(){
-        let mail_len=/([a-z])([.]?[a-z])*@(ashesi.edu.gh)$/;;
+        let mail_len=/([a-z])([.]?[a-z])*@(ashesi.edu.gh)$/;
+        
         let mail=document.getElementById("mymail");
         if(!mail.value.match(mail_len)){
             document.getElementById("mail_em").style.display = "inline";
             return true;
         }
-    };
+    }
         function BlurMail(){
             let mail=document.getElementById("mymail");
-            let mail_len=/([a-z])([.]?[a-z])*@(ashesi.edu.gh)$/;;
+            let mail_len=/([a-z])([.]?[a-z])*@(ashesi.edu.gh)$/;
             if(mail.value.match(mail_len)){
             document.getElementById("mail_em").style.display = "none";
         return false;
