@@ -4,7 +4,6 @@
     }
 
 
-    
 
     function checkNumber(){
         let num_len=/^[0-9]+$/;
