@@ -93,7 +93,7 @@
     }
 
     function BlurAddress(){
-        let addr_len=/^[0-9a-zA-Z]+$/;
+        let addr_len=/^[0-9a-zA-Z,.\s]+$/;
         let address=document.getElementById("myadd");
           if(address.value.match(addr_len)){
             document.getElementById("address_em").style.display = "none";
