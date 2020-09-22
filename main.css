@@ -115,12 +115,12 @@ body {
 	right: 10px;
 }
 
-.full-form .form-info.success i.fa-check-circle {
+.full-form .form-info.success i.valid_circle {
 	color: #2ecc71;
 	visibility: visible;
 }
 
-.full-form .form-info.error i.fa-exclamation-circle {
+.full-form .form-info.error i.error-circle {
 	color: #e74c3c;
 	visibility: visible;
 }
