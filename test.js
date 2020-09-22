@@ -1,11 +1,12 @@
 function checkData(){
+    
     if(BlurFName()){
         if(BlurMName()){
             if(BlurLName()){
                 if(BlurNumber()){
                     if(BlurEmail()){
                         if(BlurAddress()){
-                           
+                           wwa
                         }
                     }
                 }
@@ -13,6 +14,7 @@ function checkData(){
         }
     }
     return true;
+
    
 }
 
@@ -41,12 +43,16 @@ Function to check if the number inputted is valid when the input is blurred
 */
 
         function BlurPhone(){
+            let valid=false;
             let num_len=/^[0-9]+$/;
             let phonenum=document.getElementById("mynum");
             if(phonenum.value.match(num_len)){
                 document.getElementById("number_em").style.display = "none";
-            return true ;
+            valid=true ;
         }
+        
+            return valid;
+        
     };
 
 /*
@@ -58,21 +64,24 @@ Function to check if the name inputted is valid when the input is focused
         let fname= document.getElementById("f_name");
         if(!fname.value.match(name_len)){
             document.getElementById("First_em").style.display = "inline";
-            return ;
+            
         } 
+       
     };
 
 /*
 Function to check if the name inputted is valid when the input is blurred
 */
-    function BlurFName(){   
+    function BlurFName(){ 
+        let valid=false;
         let name_len=/^[A-Za-z]+$/;
         let fname= document.getElementById("f_name");
 
         if(fname.value.match(name_len)){
             document.getElementById("First_em").style.display = "none";
-            return true ;
+            valid=true ;
         }
+        return valid;
     
 };
 
@@ -93,12 +102,14 @@ function checkMName(){
 Function to check if the name inputted is valid when the input is blurred
 */
         function BlurMName(){
+            let valid=false;
             let name_len=/^[A-Za-z\s\s]+$/;
             let mname= document.getElementById("m_name");
                 if(mname.value.match(name_len)){
                     document.getElementById("Middle_em").style.display = "none";
-                return true ;
+                valid= true ;
             }
+            return valid;
         };
 /*
 Function to check if the name inputted is valid when the input is focused
@@ -118,13 +129,15 @@ Function to check if the name inputted is valid when the input is blurred
 */
 
     function BlurLName(){
+        let valid=false;
         let name_len=/^[A-Za-z\s]+$/;
         let lname= document.getElementById("l_name");
         if(lname.value.match(name_len)){
             lname.className=lname.className.replace("field-red","");
             document.getElementById("Surname_em").style.display = "none";
-            return true;     
+            valid=true;     
                 }
+                return valid;
                
     };
 /*
@@ -143,12 +156,14 @@ Function to check if the address inputted is valid when the input is focused
 Function to check if the address inputted is valid when the input is blurred
 */
     function BlurAddress(){
+        let valid=false;
         let addr_len=/^[0-9a-zA-Z\s]+$/;
         let address=document.getElementById("myadd");
           if(address.value.match(addr_len)){
             document.getElementById("address_em").style.display = "none";
             return true;
           }
+          return valid;
         };
    
 /*
@@ -167,13 +182,15 @@ Function to check if the email inputted is valid when the input is focused
 Function to check if the email inputted is valid when the input is blurred
 */
         function BlurMail(){
+            let valid=false
             let mail=document.getElementById("mymail");
             let mail_len=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
             if(mail.value.match(mail_len)){
             document.getElementById("mail_em").style.display = "none";
-        return true ;
+        valid= true ;
             
         }
+        return valid;
     }
 
 
