@@ -190,14 +190,13 @@ body {
 }
 
 
-.info-cv .fixed-form .Right{
+.info-cv .fixed-form  .Right{
     float:right;
 }
 
-.info-cv .fixed-form .left{
+.info-cv .fixed-form  .left{
     float: left;
-    white-space:nowrap;
-    margin-bottom: 5px;
+    
 }
 
 
