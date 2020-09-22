@@ -31,7 +31,7 @@
 
             <div class="bdetails">
             <label for="mname">Middle Name(s)</label><br>
-            <input type="text" name="mname" id="m_name" placeholder="Middle Name" onfocus="checkMName()" onblur="BlurMName()" required><br>
+            <input type="text" name="mname" id="m_name" placeholder="Middle Name" onfocus="checkMName()" onblur="BlurMName()" ><br>
             <p class="error_message" id="Middle_em"> Name must contain only alphabets(A-Z) </p>
         </div>
 
@@ -66,12 +66,12 @@
 
         <div class="bdetails">
             <label for="number">Mobile Phone Number</label><br>
-            <input type="text" name="number" id="mynum" placeholder="Number" onfocus="checkNumber()" onblur="BlurPhone()" required ><br> 
+            <input type="number" name="number" id="mynum" placeholder="Number"  required ><br> 
            <p class="error_message" id="number_em"> Enter only numeric values(0-9)</span> </p>
         </div>
         
 
-            <input style="background: rgb(95, 9, 23);color:white;align-self: center;flex: 3 1;padding: 20px;border-radius: 12px;text-align: center;
+            <input style="background: rgb(95, 9, 23);color:white;align-self: center;flex: 3 1;padding: 20jpx;border-radius: 12px;text-align: center;
             border:none;width: 40%;margin-left:150px; margin-top: 30px; font-size: 15px;" type="submit" name="button" id="sender" onclick="passvalue()">
 
 

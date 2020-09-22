@@ -26,7 +26,7 @@
 
 
     function checkFName(){
-        let name_len=/^[A-Za-z]+$/;
+        let name_len=/^[A-Za-z\s]+$/;
         let fname= document.getElementById("f_name");
         if(!fname.value.match(name_len)){
             document.getElementById("First_em").style.display = "inline";
@@ -34,7 +34,7 @@
         } 
     };
     function BlurFName(){   
-        let name_len=/^[A-Za-z]+$/;
+        let name_len=/^[A-Za-z\s]+$/;
         let fname= document.getElementById("f_name");
 
         if(fname.value.match(name_len)){
@@ -45,7 +45,7 @@
 };
 
     function checkMName(){
-        let name_len=/^[A-Za-z]+$/;
+        let name_len=/^[A-Za-z\s]+$/;
         let mname= document.getElementById("m_name");
             if(!mname.value.match(name_len)){
                 document.getElementById("Middle_em").style.display = "inline";
@@ -53,7 +53,7 @@
             }
         };
         function BlurMName(){
-            let name_len=/^[A-Za-z]+$/;
+            let name_len=/^[A-Za-z\s\s]+$/;
             let mname= document.getElementById("m_name");
                 if(mname.value.match(name_len)){
                     document.getElementById("Middle_em").style.display = "none";
@@ -62,7 +62,7 @@
         };
 
     function checkLName(){
-        let name_len=/^[A-Za-z]+$/;
+        let name_len=/^[A-Za-z\s]+$/;
         let lname= document.getElementById("l_name");
         if(!lname.value.match(name_len)){
             lname.className=lname.className + "field-red";
@@ -72,7 +72,7 @@
     };
 
     function BlurLName(){
-        let name_len=/^[A-Za-z]+$/;
+        let name_len=/^[A-Za-z\s]+$/;
         let lname= document.getElementById("l_name");
         if(lname.value.match(name_len)){
             lname.className=lname.className.replace("field-red","");
@@ -84,7 +84,7 @@
 
 
     function CheckAddress(){
-        let addr_len=/^[0-9a-zA-Z]+$/;
+        let addr_len=/^[0-9a-zA-Z\s]+$/;
         let address=document.getElementById("myadd");
         if(!address.value.match(addr_len)){
             document.getElementById("address_em").style.display = "inline";
@@ -93,7 +93,7 @@
     };
 
     function BlurAddress(){
-        let addr_len=/^[0-9a-zA-Z]+$/;
+        let addr_len=/^[0-9a-zA-Z\s]+$/;
         let address=document.getElementById("myadd");
           if(address.value.match(addr_len)){
             document.getElementById("address_em").style.display = "none";
