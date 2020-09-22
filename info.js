@@ -79,15 +79,15 @@ function validate(){
         }
         if(phone.match(number)){
             document.getElementById("number_em").style.display = "none";
-            return false;
+            return true;
         }
         if(mail.match(email)){
             document.getElementById("mail_em").style.display = "none";
-            return false;
+            return true;
         }
         if(postal.match(address)){
             document.getElementById("address_em").style.display = "none";
-            return false;
+            return true;
         }
 
     }
