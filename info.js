@@ -19,40 +19,27 @@ form.addEventListener('submit',e =>{
 
 function validate(){
     if (!valid_name(first)) {
-		Error(first );
-	} else {
-		Valid(first);
-    }
+		alert("Error");
+	} 
     
     if (!valid_name(middle)) {
-		Error(middle );
-	} else {
-		Valid(middle);
-    }
-    
+		alert("Error!");
+	} 
     if (!valid_name(last)) {
-		Error(last );
-	} else {
-		Valid(last);
-    }
+		alert("Error!");
+	} 
     
 
     if (!valid_number(phone)) {
-		Error(phone );
-	} else {
-		Valid(phone);
-    }
+		alert("error!");
+	} 
     
     if (!valid_post(postal)) {
-		Error(postal );
-	} else {
-		Valid(postal);
-	}
+		alert("Error!")
+	} 
     if (!valid_mail(mail)) {
-		Error(mail);
-	} else {
-		Valid(mail);
-	}
+		alert("error!");
+	} 
 }
 
 
