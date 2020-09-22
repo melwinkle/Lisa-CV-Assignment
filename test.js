@@ -2,7 +2,13 @@ function checkData(){
     if(checkFName()){
         if(checkMName()){
             if(checkLName()){
-
+                if(checkNumber()){
+                    if(checkEmail()){
+                        if(CheckAddress()){
+                            
+                        }
+                    }
+                }
             }
         }
     }
