@@ -1,3 +1,21 @@
+function checkData(){
+    if(checkFName()){
+        if(checkMName()){
+            if(checkLName()){
+
+            }
+        }
+    }
+    return false;
+}
+
+
+function handlesubmit(){
+    checkData();
+    passvalue();
+}
+
+
 /*
 Function to check if the number inputted is valid when the input is focused
 */
