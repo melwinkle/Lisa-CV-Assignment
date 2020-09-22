@@ -27,7 +27,7 @@ function validate(){
     if (!valid_name(middle)) {
 		setErrorFor(middle ,'Name must contain only alphabets(A-Z)');
 	} else {
-		setSuccessFor(middle;
+		setSuccessFor(middle);
     }
     
     if (!valid_name(last)) {
