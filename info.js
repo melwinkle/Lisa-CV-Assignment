@@ -47,7 +47,7 @@ function validatefName(){
         return true;
     }
     else{
-        document.getElementById("First_em").style.display = "inline";
+        document.getElementById("First_em").innerHTML = "Name can only contain alphabets(A-Z)";
         return false;
         }
     
@@ -60,7 +60,7 @@ function validatemName(){
         return true;
     }
     else{
-        document.getElementById("Middle_em").style.display = "inline";
+        document.getElementById("Middle_em").style.display = "Name can only contain alphabets(A-Z)";
         return false;
     }
 }
@@ -72,7 +72,7 @@ function validatelName(){
         return true;
     }
     else{
-        document.getElementById("Last_em").style.display = "inline";
+        document.getElementById("Last_em").style.display = "Name can only contain alphabets(A-Z)";
         return false;
     }
 }
