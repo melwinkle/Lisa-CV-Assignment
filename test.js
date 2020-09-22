@@ -1,6 +1,6 @@
 function checkData(){
     if(BlurFName()){
-        if(cBlurMName()){
+        if(BlurMName()){
             if(BlurLName()){
                 if(BlurNumber()){
                     if(BlurEmail()){
