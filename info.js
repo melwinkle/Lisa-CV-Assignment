@@ -26,12 +26,7 @@ return false;
 }
 
 
-/*
-Function to check and validate the data inputs
-*/
 
-
-//function validate(){
 
 
     
@@ -48,7 +43,7 @@ Function to check and validate the data inputs
 function validatefName(){
     let pattern=/a-zA-z\s-/;
     if(first.match(pattern)){
-        document.getElementById("First_em").style.display = "none";
+        document.getElementById("First_em").innerHTML= "Good!";
         return true;
     }
     else{
@@ -73,7 +68,7 @@ function validatemName(){
 function validatelName(){
     let pattern=/a-zA-z\s-/;
     if(last.match(pattern)){
-        document.getElementById("Last_em").style.display = "none";
+        document.getElementById("Last_em").innerHTML = "Good!";
         return true;
     }
     else{
@@ -81,12 +76,15 @@ function validatelName(){
         return false;
     }
 }
-   
+
+
+
 
 function validate(){
     if(validatefName()){
         if(validatemName()){
             if(validatelName()){
+                
 
             }
         }

@@ -4,19 +4,13 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        {
-            "name": "Attach to Chrome",
-            "port": 9222,
-            "request": "attach",
-            "type": "pwa-chrome",
-            "webRoot": "${workspaceFolder}"
-        },
+        
         {
             "name": "Launch Chrome",
             "request": "launch",
             "type": "pwa-chrome",
             "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
+            "webRoot": "c:\\Users\\ADZO\\Desktop\\Ashesi Work\\THIRD YEAR\\Fall Semester\\WEBB TECH\\Labs\\testjs"
         },
         
         {
