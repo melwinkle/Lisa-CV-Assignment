@@ -6,14 +6,14 @@ function checkData(){
                 if(BlurNumber()){
                     if(BlurEmail()){
                         if(BlurAddress()){
-                           wwa
+                           
                         }
                     }
                 }
             }
         }
     }
-    return true;
+    return ;
 
    
 }
