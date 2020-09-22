@@ -7,7 +7,7 @@
     
 
     function checkNumber(){
-        let num_len=/0-9a-zA-Z ]/;
+        let num_len=/^([0-9]{0,2})[0-9]/;
         let phonenum=document.getElementById("mynum");
         if(!phonenum.value.match(num_len)){
             document.getElementById("number_em").style.display = "inline";
@@ -16,7 +16,7 @@
     }
 
         function BlurPhone(){
-            let num_len=/0-9a-zA-Z ]/;
+            let num_len=/^([0-9]{0,2})[0-9]/;
             let phonenum=document.getElementById("mynum");
             if(phonenum.value.match(num_len)){
                 document.getElementById("number_em").style.display = "none";
@@ -104,7 +104,7 @@
 
     function checkEmail(){
         let mail_len=/([a-z])([.]?[a-z])*@(ashesi.edu.gh)$/;
-        
+
         let mail=document.getElementById("mymail");
         if(!mail.value.match(mail_len)){
             document.getElementById("mail_em").style.display = "inline";
