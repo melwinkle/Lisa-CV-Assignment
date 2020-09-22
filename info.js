@@ -8,12 +8,12 @@
     let postal=document.getElementById("myadd").value;
     let form=document.getElementById("form-info");
 
-form.addEventListener('submit',e =>{
-    e.preventdefault();
+function finaldata(){
+   
     validate();
     passvalue();
 
-});
+}
  
 
 
