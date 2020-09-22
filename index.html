@@ -15,7 +15,7 @@
 
 
         <div class="full-form">
-        <form class=form-info action="cv.html" onsubmit=" return validate()" >
+        <form class=form-info action="cv.html" >
             <div class="f-header">
                 SIGN UP
             </div>
@@ -23,20 +23,26 @@
             
             <div class="bdetails">
             <label for="fname">First Name</label><br>
-            <input type="text" name="fname" id="f_name" placeholder="First Name" onfocus="return validatefName()"  required><br>
-            <p class="error_message" id="First_em">Name must contain only alphabets(A-Z)</p>
+            <input type="text" name="fname" id="f_name" placeholder="First Name"  required><br>
+            <i class="valid_circle"></i>
+			<i class="error-circle"></i>
+			<small>Error </small>
         </div>
 
             <div class="bdetails">
             <label for="mname">Middle Name(s)</label><br>
             <input type="text" name="mname" id="m_name" placeholder="Middle Name"  ><br>
-            <p class="error_message" id="Middle_em"> Name must contain only alphabets(A-Z) </p>
+            <i class="valid_circle"></i>
+			<i class="error-circle"></i>
+			<small>Error </small>
         </div>
 
         <div class="bdetails">
             <label for="lname">Surname</label><br>
             <input type="text" name="lname" id="l_name" placeholder="Surname"  required><br>
-            <p class="error_message" id="Surname_em"> Name must contain only alphabets(A-Z)</span> </p>
+            <i class="valid_circle"></i>
+			<i class="error-circle"></i>
+			<small>Error </small>
         </div>
 
         <div class="gdetails">
@@ -46,26 +52,32 @@
                 <option value="male">Male</option>
                 <option value="female">Female</option>
             </select><br>
-            <p class="error_message" id="gender_em">Select a Gender</p>
+            
         </div>
 
         <div class="bdetails">
             <label for="address">Postal Address</label><br>
             <input type="text" name="address" id="myadd" placeholder="Address" required><br>
-            <p class="error_message" id="address_em"> Enter a valid address</p> </p>
+            <i class="valid_circle"></i>
+			<i class="error-circle"></i>
+			<small>Error </small>
         </div>
 
 
         <div class="bdetails">
             <label for="email">Email</label><br>
             <input type="email" name="mail" id="mymail" placeholder="firstname.lastname@ashesi.edu.gh"  required><br>
-            <p class="error_message" id="mail_em">Enter a valid ashesi email address</span> </p>
+            <i class="valid_circle"></i>
+			<i class="error-circle"></i>
+			<small>Error </small>
         </div>
 
         <div class="bdetails">
             <label for="number">Mobile Phone Number</label><br>
             <input type="number" name="number" id="mynum" placeholder="Number"  required ><br> 
-           <p class="error_message" id="number_em"> Enter only numeric values(0-9)</p> </p>
+            <i class="valid_circle"></i>
+			<i class="error-circle"></i>
+			<small>Error </small>
         </div>
         
 

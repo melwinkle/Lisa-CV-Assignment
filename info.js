@@ -1,3 +1,61 @@
+
+ 
+    let first=document.getElementById("f_name").value;
+    let middle=document.getElementById("m_name").value;
+    let last=document.getElementById("l_name").value;
+    let phone=document.getElementById("mynum").value;
+    let mail=document.getElementById("mymail").value;
+    let postal=document.getElementById("myadd").value;
+    let form=document.getElementById("form-info").value;
+
+form.addEventListener('submit',e =>{
+    e.preventdefault();
+    validate();
+    passvalue();
+
+})
+
+
+
+function validate(){
+    if (!valid_name(first)) {
+		setErrorFor(first ,'Name must contain only alphabets(A-Z)');
+	} else {
+		setSuccessFor(first);
+    }
+    
+    if (!valid_name(middle)) {
+		setErrorFor(middle ,'Name must contain only alphabets(A-Z)');
+	} else {
+		setSuccessFor(middle;
+    }
+    
+    if (!valid_name(last)) {
+		setErrorFor(last ,'Name must contain only alphabets(A-Z)');
+	} else {
+		setSuccessFor(last);
+    }
+    
+
+    if (!valid_number(phone)) {
+		setErrorFor(phone ,'Numeric values only');
+	} else {
+		setSuccessFor(phone);
+    }
+    
+    if (!valid_post(postal)) {
+		setErrorFor(postal ,'Invalid Address');
+	} else {
+		setSuccessFor(postal);
+	}
+    if (!valid_mail(mail)) {
+		setErrorFor(mail, 'Not a valid Ashesi email');
+	} else {
+		setSuccessFor(mail);
+	}
+}
+
+
  /*
 Function to set the values in the form and store them locally
 */
@@ -27,100 +85,31 @@ return false;
 
 
 
-
-
-    
-    let number=/^([0-9]{0,2})[0-9]/;
-    let email=/([a-z])([.]?[a-z])*@(ashesi.edu.gh)$/;
-    let addres=/0-9a-zA-Z ]/;
-    let first=document.getElementById("f_name").value;
-    let middle=document.getElementById("m_name").value;
-    let last=document.getElementById("l_name").value;
-    let phone=document.getElementById("mynum").value;
-    let mail=document.getElementById("mymail").value;
-    let postal=document.getElementById("myadd").value;
-
-function validatefName(){
-    let pattern=/a-zA-z\s-/;
-    if(first.match(pattern)){
-        document.getElementById("First_em").style.display= "none";
-        return true;
-    }
-    else{
-        document.getElementById("First_em").style.display = "inline";
-        return false;
-        }
-    
-    }
-
-function validatemName(){
-    let pattern=/a-zA-z\s-/;
-    if(middle.match(pattern)){
-        document.getElementById("Middle_em").style.display = "none";
-        return true;
-    }
-    else{
-        document.getElementById("Middle_em").style.display = "inline";
-        return false;
-    }
+function valid_mail(mail){
+    return /([a-z])([.]?[a-z])*@(ashesi.edu.gh)$/.test(mail);
 }
 
-function validatelName(){
-    let pattern=/a-zA-z\s-/;
-    if(last.match(pattern)){
-        document.getElementById("Last_em").style.display = "none";
-        return true;
-    }
-    else{
-        document.getElementById("Last_em").style.display = "inline";
-        return false;
-    }
+function valid_post(postal){
+    return /0-9a-zA-Z ]/.test(postal);
 }
-
-form
-
-function validate(){
-    if(validatefName()){
-        if(validatemName()){
-            if(validatelName()){
-                
-
-            }
-        }
-    }
-    return true;
+function valid_number(numb){
+    return /^([0-9]{0,2})[0-9]/.test(numb);
 }
-
+function valid_name(name){
+    return /a-zA-z\s-/.test(name);
+}
     
+function Error(input, message) {
+	const formControl = input.parentElement;
+	const small = formControl.querySelector('small');
+	formControl.className = 'form-control error';
+	small.innerText = message;
+}
 
-    // if(!phone.match(number)){
-    //     document.getElementById("number_em").style.display = "inline";
-    //     return false;
-    // }
-    // if(!mail.match(mail)){
-    //     document.getElementById("mail_em").style.display = "inline";
-    //     return false;
-    // }
-    // if(!postal.match(addres)){
-    //     document.getElementById("address_em").style.display = "inline";
-    //     return false;
-    // }
-
-    // else{
+function Valid(input) {
+	const formControl = input.parentElement;
+	formControl.className = 'form-control success';
+}    
         
         
-        
-    //     if(phone.match(number)){
-    //         document.getElementById("number_em").style.display = "none";
-    //         return true;
-    //     }
-    //     if(mail.match(email)){
-    //         document.getElementById("mail_em").style.display = "none";
-    //         return true;
-    //     }
-    //     if(postal.match(address)){
-    //         document.getElementById("address_em").style.display = "none";
-    //         return true;
-    //     }
-
-    // }
+    
