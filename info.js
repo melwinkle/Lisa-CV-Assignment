@@ -19,37 +19,37 @@ form.addEventListener('submit',e =>{
 
 function validate(){
     if (!valid_name(first)) {
-		Error(first ,'Name must contain only alphabets(A-Z)');
+		Error(first );
 	} else {
 		Valid(first);
     }
     
     if (!valid_name(middle)) {
-		Error(middle ,'Name must contain only alphabets(A-Z)');
+		Error(middle );
 	} else {
 		Valid(middle);
     }
     
     if (!valid_name(last)) {
-		Error(last ,'Name must contain only alphabets(A-Z)');
+		Error(last );
 	} else {
 		Valid(last);
     }
     
 
     if (!valid_number(phone)) {
-		Error(phone ,'Numeric values only');
+		Error(phone );
 	} else {
 		Valid(phone);
     }
     
     if (!valid_post(postal)) {
-		Error(postal ,'Invalid Address');
+		Error(postal );
 	} else {
 		Valid(postal);
 	}
     if (!valid_mail(mail)) {
-		Error(mail, 'Not a valid Ashesi email');
+		Error(mail);
 	} else {
 		Valid(mail);
 	}
