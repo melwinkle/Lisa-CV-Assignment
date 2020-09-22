@@ -170,7 +170,7 @@ Function to check if the address inputted is valid when the input is blurred
 Function to check if the email inputted is valid when the input is focused
 */
     function checkEmail(){
-        let mail_len=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        let mail_len=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+(ashesi.edu.gh)$/;
         let mail=document.getElementById("mymail");
         if(!mail.value.match(mail_len)){
             document.getElementById("mail_em").style.display = "inline";
@@ -184,7 +184,7 @@ Function to check if the email inputted is valid when the input is blurred
         function BlurMail(){
             let valid=false
             let mail=document.getElementById("mymail");
-            let mail_len=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            let mail_len=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+(ashesi.edu.gh)$/;
             if(mail.value.match(mail_len)){
             document.getElementById("mail_em").style.display = "none";
         valid= true ;
