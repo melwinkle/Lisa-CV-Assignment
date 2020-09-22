@@ -27,7 +27,7 @@ return false;
 
 
 function validate(){
-    let pattern=/a-zA-z /;
+    let pattern=/a-zA-z\s/;
     let number=/^([0-9]{0,2})[0-9]/;
     let email=/([a-z])([.]?[a-z])*@(ashesi.edu.gh)$/;
     let address=/0-9a-zA-Z ]/;
