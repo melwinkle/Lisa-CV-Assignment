@@ -12,7 +12,7 @@ function checkData(){
             }
         }
     }
-    return false;
+    return true;
    
 }
 
@@ -45,7 +45,7 @@ Function to check if the number inputted is valid when the input is blurred
             let phonenum=document.getElementById("mynum");
             if(phonenum.value.match(num_len)){
                 document.getElementById("number_em").style.display = "none";
-            return ;
+            return true ;
         }
     };
 
@@ -71,7 +71,7 @@ Function to check if the name inputted is valid when the input is blurred
 
         if(fname.value.match(name_len)){
             document.getElementById("First_em").style.display = "none";
-            return ;
+            return true ;
         }
     
 };
@@ -97,7 +97,7 @@ Function to check if the name inputted is valid when the input is blurred
             let mname= document.getElementById("m_name");
                 if(mname.value.match(name_len)){
                     document.getElementById("Middle_em").style.display = "none";
-                return ;
+                return true ;
             }
         };
 /*
@@ -123,7 +123,7 @@ Function to check if the name inputted is valid when the input is blurred
         if(lname.value.match(name_len)){
             lname.className=lname.className.replace("field-red","");
             document.getElementById("Surname_em").style.display = "none";
-            return;     
+            return true;     
                 }
                
     };
@@ -147,7 +147,7 @@ Function to check if the address inputted is valid when the input is blurred
         let address=document.getElementById("myadd");
           if(address.value.match(addr_len)){
             document.getElementById("address_em").style.display = "none";
-            return;
+            return true;
           }
         };
    
@@ -159,7 +159,7 @@ Function to check if the email inputted is valid when the input is focused
         let mail=document.getElementById("mymail");
         if(!mail.value.match(mail_len)){
             document.getElementById("mail_em").style.display = "inline";
-            return ;
+            return;
         }
     };
 
@@ -171,7 +171,7 @@ Function to check if the email inputted is valid when the input is blurred
             let mail_len=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
             if(mail.value.match(mail_len)){
             document.getElementById("mail_em").style.display = "none";
-        return ;
+        return true ;
             
         }
     }
