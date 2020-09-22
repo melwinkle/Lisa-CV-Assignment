@@ -19,39 +19,39 @@ form.addEventListener('submit',e =>{
 
 function validate(){
     if (!valid_name(first)) {
-		setErrorFor(first ,'Name must contain only alphabets(A-Z)');
+		Error(first ,'Name must contain only alphabets(A-Z)');
 	} else {
-		setSuccessFor(first);
+		Valid(first);
     }
     
     if (!valid_name(middle)) {
-		setErrorFor(middle ,'Name must contain only alphabets(A-Z)');
+		Error(middle ,'Name must contain only alphabets(A-Z)');
 	} else {
-		setSuccessFor(middle);
+		Valid(middle);
     }
     
     if (!valid_name(last)) {
-		setErrorFor(last ,'Name must contain only alphabets(A-Z)');
+		Error(last ,'Name must contain only alphabets(A-Z)');
 	} else {
-		setSuccessFor(last);
+		Valid(last);
     }
     
 
     if (!valid_number(phone)) {
-		setErrorFor(phone ,'Numeric values only');
+		Error(phone ,'Numeric values only');
 	} else {
-		setSuccessFor(phone);
+		Valid(phone);
     }
     
     if (!valid_post(postal)) {
-		setErrorFor(postal ,'Invalid Address');
+		Error(postal ,'Invalid Address');
 	} else {
-		setSuccessFor(postal);
+		Valid(postal);
 	}
     if (!valid_mail(mail)) {
-		setErrorFor(mail, 'Not a valid Ashesi email');
+		Error(mail, 'Not a valid Ashesi email');
 	} else {
-		setSuccessFor(mail);
+		Valid(mail);
 	}
 }
 
@@ -100,14 +100,14 @@ function valid_name(name){
 }
     
 function Error(input, message) {
-	const formControl = input.parentElement;
-	const small = formControl.querySelector('small');
+	let formControl = input.parentElement;
+	let small = formControl.querySelector('small');
 	formControl.className = 'form-control error';
 	small.innerText = message;
 }
 
 function Valid(input) {
-	const formControl = input.parentElement;
+	let formControl = input.parentElement;
 	formControl.className = 'form-control success';
 }    
         
