@@ -86,29 +86,38 @@ return false;
 
 
 function valid_mail(mail){
-    return /([a-z])([.]?[a-z])*@(ashesi.edu.gh)$/.test(mail);
+    let pat_mail=/([a-z])([.]?[a-z])*@(ashesi.edu.gh)$/;
+    if(mail.match(pat_mail)){
+        return true;
+    }
 }
 
 function valid_post(postal){
-    return /0-9a-zA-Z ]/.test(postal);
+    let pat_post=/0-9a-zA-Z ]/;
+    if(postal.match(pat_post)){
+        return true;
+    }
+
 }
 function valid_number(numb){
-    return /^([0-9]{0,2})[0-9]/.test(numb);
+    let pat_num= /^([0-9]{0,2})[0-9]/;
+    if(numb.match(pat_num)){
+        return true;
+    }
 }
 function valid_name(name){
-    return /a-zA-z\s-/.test(name);
+    let pat_name=/a-zA-z\s-/;
+    if(name.match(pat_name)){
+        return true;
+    }
 }
     
-function Error(input, message) {
-	let formControl = input.parentElement;
-	let small = formControl.querySelector('small');
-	formControl.className = 'form-control error';
-	small.innerText = message;
+function Error(input) {
+	input.className=input.className.replace("field-red");
 }
 
 function Valid(input) {
-	let formControl = input.parentElement;
-	formControl.className = 'form-control success';
+	input.className=input.className.replace("field-red","field-green");
 }    
         
         
