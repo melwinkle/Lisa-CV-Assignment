@@ -6,7 +6,7 @@ function checkData(){
                 if(BlurNumber()){
                     if(BlurEmail()){
                         if(BlurAddress()){
-                           wwa
+                           
                         }
                     }
                 }
