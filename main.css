@@ -180,9 +180,7 @@ body {
    margin-left: 20%;
 }
 
-/* .fixed-form .year{
-    text-align: right;
-} */
+
 
 .info-cv .fixed-form h3{
     margin:0;
@@ -190,15 +188,20 @@ body {
 }
 
 
-.info-cv .fixed-form  .Right{
+.info-cv .fixed-form  .pos .Right{
     float:right;
 }
 
-.info-cv .fixed-form  .left{
+.info-cv .fixed-form .pos  .left{
     float: left;
     
 }
 
+.info-cv .fixed-form .push .right {
+    margin-left: 10px;
+    float: right;
+    
+}
 
 
 
