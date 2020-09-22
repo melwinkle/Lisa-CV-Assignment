@@ -1,3 +1,7 @@
+/*
+Function to get the values from the form and set it to cv form
+*/
+
 window.addEventListener('load',()=>{
 
     document.getElementById('fame').innerHTML=localStorage.getItem("first");

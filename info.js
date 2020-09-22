@@ -1,4 +1,4 @@
-  /*
+ /*
 Function to set the values in the form and store them locally
 */
 
@@ -26,30 +26,102 @@ return false;
 }
 
 
-/*
-Function to check name 
-*/
-function ValFName(){
-    let pattern=/A-aZ-z\s/;
-    let first=document.getElementById("f_name");
-    if(first.value.match(pattern)){
-        document.getElementById("First_em").style.display = "none";
+
+
+
+    
+    let number=/^([0-9]{0,2})[0-9]/;
+    let email=/([a-z])([.]?[a-z])*@(ashesi.edu.gh)$/;
+    let addres=/0-9a-zA-Z ]/;
+    let first=document.getElementById("f_name").value;
+    let middle=document.getElementById("m_name").value;
+    let last=document.getElementById("l_name").value;
+    let phone=document.getElementById("mynum").value;
+    let mail=document.getElementById("mymail").value;
+    let postal=document.getElementById("myadd").value;
+
+function validatefName(){
+    let pattern=/a-zA-z\s-/;
+    if(first.match(pattern)){
+        document.getElementById("First_em").innerHTML= "Good!";
         return true;
     }
     else{
         document.getElementById("First_em").style.display = "inline";
         return false;
+        }
+    
+    }
+
+function validatemName(){
+    let pattern=/a-zA-z\s-/;
+    if(middle.match(pattern)){
+        document.getElementById("Middle_em").style.display = "none";
+        return true;
+    }
+    else{
+        document.getElementById("Middle_em").style.display = "inline";
+        return false;
     }
 }
 
-/*
-Function to validate the data
-*/
-function ValData(){
-    if(ValFName()){
-        passvalue();
+function validatelName(){
+    let pattern=/a-zA-z\s-/;
+    if(last.match(pattern)){
+        document.getElementById("Last_em").innerHTML = "Good!";
+        return true;
     }
     else{
-        window.alert("Invalid Fields");
+        document.getElementById("Last_em").style.display = "inline";
+        return false;
     }
 }
+
+
+
+
+function validate(){
+    if(validatefName()){
+        if(validatemName()){
+            if(validatelName()){
+                
+
+            }
+        }
+    }
+    return true;
+}
+
+    
+
+    // if(!phone.match(number)){
+    //     document.getElementById("number_em").style.display = "inline";
+    //     return false;
+    // }
+    // if(!mail.match(mail)){
+    //     document.getElementById("mail_em").style.display = "inline";
+    //     return false;
+    // }
+    // if(!postal.match(addres)){
+    //     document.getElementById("address_em").style.display = "inline";
+    //     return false;
+    // }
+
+    // else{
+        
+        
+        
+    //     if(phone.match(number)){
+    //         document.getElementById("number_em").style.display = "none";
+    //         return true;
+    //     }
+    //     if(mail.match(email)){
+    //         document.getElementById("mail_em").style.display = "none";
+    //         return true;
+    //     }
+    //     if(postal.match(address)){
+    //         document.getElementById("address_em").style.display = "none";
+    //         return true;
+    //     }
+
+    // }
