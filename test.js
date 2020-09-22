@@ -52,7 +52,7 @@ Function to check if the name inputted is valid when the input is focused
 */
 
     function checkFName(){
-        let name_len=/^[A-Za-z\s]+$/;
+        let name_len=/^[A-Za-z]+$/;
         let fname= document.getElementById("f_name");
         if(!fname.value.match(name_len)){
             document.getElementById("First_em").style.display = "inline";
@@ -64,7 +64,7 @@ Function to check if the name inputted is valid when the input is focused
 Function to check if the name inputted is valid when the input is blurred
 */
     function BlurFName(){   
-        let name_len=/^[A-Za-z\s]+$/;
+        let name_len=/^[A-Za-z]+$/;
         let fname= document.getElementById("f_name");
 
         if(fname.value.match(name_len)){
