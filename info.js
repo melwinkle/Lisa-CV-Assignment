@@ -28,9 +28,15 @@ return false;
 
 function validate(){
     let pattern=/a-zA-z /;
+    let number=/^([0-9]{0,2})[0-9]/;
+    let email=/([a-z])([.]?[a-z])*@(ashesi.edu.gh)$/;
+    let address=/0-9a-zA-Z ]/;
     let first=document.getElementById("f_name").value;
     let middle=document.getElementById("m_name").value;
     let last=document.getElementById("l_name").value;
+    let phone=document.getElementById("mynum").value;
+    let mail=document.getElementById("mymail").value;
+    let postal=document.getElementById("myadd").value;
 
     if(!first.match(pattern)){
         document.getElementById("First_em").style.display = "inline";
@@ -42,6 +48,19 @@ function validate(){
     }
     if(!last.match(pattern)){
         document.getElementById("Last_em").style.display = "inline";
+        return false;
+    }
+
+    if(!phone.match(number)){
+        document.getElementById("number_em").style.display = "inline";
+        return false;
+    }
+    if(!mail.match(email)){
+        document.getElementById("mail_em").style.display = "inline";
+        return false;
+    }
+    if(!postal.match(address)){
+        document.getElementById("address_em").style.display = "inline";
         return false;
     }
 
@@ -57,6 +76,18 @@ function validate(){
         if(last.match(patten)){
             document.getElementById("Last_em").style.display = "none";
             return true;
+        }
+        if(phone.match(number)){
+            document.getElementById("number_em").style.display = "none";
+            return false;
+        }
+        if(mail.match(email)){
+            document.getElementById("mail_em").style.display = "none";
+            return false;
+        }
+        if(postal.match(address)){
+            document.getElementById("address_em").style.display = "none";
+            return false;
         }
 
     }
