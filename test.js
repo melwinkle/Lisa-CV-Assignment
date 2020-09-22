@@ -1,10 +1,10 @@
 function checkData(){
-    if(checkFName()){
-        if(checkMName()){
-            if(checkLName()){
-                if(checkNumber()){
-                    if(checkEmail()){
-                        if(CheckAddress()){
+    if(BlurFName()){
+        if(cBlurMName()){
+            if(BlurLName()){
+                if(BlurNumber()){
+                    if(BlurEmail()){
+                        if(BlurAddress()){
 
                         }
                     }
