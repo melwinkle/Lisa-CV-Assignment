@@ -6,7 +6,7 @@
     let phone=document.getElementById("mynum").value;
     let mail=document.getElementById("mymail").value;
     let postal=document.getElementById("myadd").value;
-    let form=document.getElementById("form-info").value;
+    let form=document.getElementById("form-info");
 
 form.addEventListener('submit',e =>{
     e.preventdefault();
@@ -14,7 +14,7 @@ form.addEventListener('submit',e =>{
     passvalue();
 
 })
-
+ 
 
 
 function validate(){
