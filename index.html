@@ -23,20 +23,20 @@
             
             <div class="bdetails">
             <label for="fname">First Name</label><br>
-            <input type="text" name="fname" id="f_name" placeholder="First Name"  required><br>
-            <p class="error_message" id="First_em"></p>
+            <input type="text" name="fname" id="f_name" placeholder="First Name" onfocus="return validatefName()"  required><br>
+            <p class="error_message" id="First_em">Name must contain only alphabets(A-Z)</p>
         </div>
 
             <div class="bdetails">
             <label for="mname">Middle Name(s)</label><br>
             <input type="text" name="mname" id="m_name" placeholder="Middle Name"  ><br>
-            <p class="error_message" id="Middle_em"> </p>
+            <p class="error_message" id="Middle_em"> Name must contain only alphabets(A-Z) </p>
         </div>
 
         <div class="bdetails">
             <label for="lname">Surname</label><br>
             <input type="text" name="lname" id="l_name" placeholder="Surname"  required><br>
-            <p class="error_message" id="Surname_em"> </span> </p>
+            <p class="error_message" id="Surname_em"> Name must contain only alphabets(A-Z)</span> </p>
         </div>
 
         <div class="gdetails">

@@ -43,11 +43,11 @@ return false;
 function validatefName(){
     let pattern=/a-zA-z\s-/;
     if(first.match(pattern)){
-        document.getElementById("First_em").innerHTML= "Good!";
+        document.getElementById("First_em").style.display= "none";
         return true;
     }
     else{
-        document.getElementById("First_em").innerHTML = "Name can only contain alphabets(A-Z)";
+        document.getElementById("First_em").style.display = "inline";
         return false;
         }
     
@@ -60,7 +60,7 @@ function validatemName(){
         return true;
     }
     else{
-        document.getElementById("Middle_em").style.display = "Name can only contain alphabets(A-Z)";
+        document.getElementById("Middle_em").style.display = "inline";
         return false;
     }
 }
@@ -68,17 +68,16 @@ function validatemName(){
 function validatelName(){
     let pattern=/a-zA-z\s-/;
     if(last.match(pattern)){
-        document.getElementById("Last_em").innerHTML = "Good!";
+        document.getElementById("Last_em").style.display = "none";
         return true;
     }
     else{
-        document.getElementById("Last_em").style.display = "Name can only contain alphabets(A-Z)";
+        document.getElementById("Last_em").style.display = "inline";
         return false;
     }
 }
 
-
-
+form
 
 function validate(){
     if(validatefName()){
