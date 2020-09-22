@@ -19,7 +19,14 @@ function checkData(){
 function handlesubmit(){
     checkData();
     passvalue();
-}
+    
+    
+        
+
+    }
+    
+    
+
 
 
 /*
