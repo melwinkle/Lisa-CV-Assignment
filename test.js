@@ -5,19 +5,22 @@ function checkData(){
                 if(BlurNumber()){
                     if(BlurEmail()){
                         if(BlurAddress()){
-                            passvalue();
+                           
                         }
                     }
                 }
             }
         }
     }
+    return false;
    
 }
 
 
     
-    
+    function handlesubmit(){
+        passvalue();
+    }
 
 
 
