@@ -82,7 +82,17 @@ function validatelName(){
     }
 }
    
-    
+
+function validate(){
+    if(validatefName()){
+        if(validatemName()){
+            if(validatelName()){
+
+            }
+        }
+    }
+    return true;
+}
 
     
 
