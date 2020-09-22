@@ -26,6 +26,11 @@ return false;
 }
 
 
+/*
+Function to check and validate the data inputs
+*/
+
+
 function validate(){
     let pattern=/a-zA-z\s-/;
     let number=/^([0-9]{0,2})[0-9]/;
@@ -38,10 +43,11 @@ function validate(){
     let mail=document.getElementById("mymail").value;
     let postal=document.getElementById("myadd").value;
 
-    if(!first.match(pattern)){
-        document.getElementById("First_em").style.display = "inline";
-        return false;
-    }
+
+    // if(!first.match(pattern)){
+    //     document.getElementById("First_em").style.display = "inline";
+    //     return false;
+    // }
     if(!middle.match(pattern)){
         document.getElementById("Middle_em").style.display = "inline";
         return false;
@@ -65,10 +71,10 @@ function validate(){
     }
 
     else{
-        if(first.match(patten)){
-        document.getElementById("First_em").style.display = "none";
-        return true;
-        }
+        // if(first.match(patten)){
+        // document.getElementById("First_em").style.display = "none";
+        // return true;
+        // }
         if(middle.match(patten)){
             document.getElementById("Middle_em").style.display = "none";
             return true;
