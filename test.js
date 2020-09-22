@@ -5,7 +5,7 @@ function checkData(){
                 if(checkNumber()){
                     if(checkEmail()){
                         if(CheckAddress()){
-                            
+
                         }
                     }
                 }
@@ -52,7 +52,7 @@ Function to check if the name inputted is valid when the input is focused
 */
 
     function checkFName(){
-        let name_len=/^[A-Za-z\s]$/;
+        let name_len=/^[A-Za-z\s]+$/;
         let fname= document.getElementById("f_name");
         if(!fname.value.match(name_len)){
             document.getElementById("First_em").style.display = "inline";
@@ -64,7 +64,7 @@ Function to check if the name inputted is valid when the input is focused
 Function to check if the name inputted is valid when the input is blurred
 */
     function BlurFName(){   
-        let name_len=/^[A-Za-z\s]$/;
+        let name_len=/^[A-Za-z\s]+$/;
         let fname= document.getElementById("f_name");
 
         if(fname.value.match(name_len)){
@@ -79,7 +79,7 @@ Function to check if the name inputted is valid when the input is focused
 */
 
 function checkMName(){
-    let name_len=/^[A-Za-z\s]$/;
+    let name_len=/^[A-Za-z\s]+$/;
     let mname= document.getElementById("m_name");
     if(!mname.value.match(name_len)){
         document.getElementById("Middle_em").style.display = "inline";
@@ -91,7 +91,7 @@ function checkMName(){
 Function to check if the name inputted is valid when the input is blurred
 */
         function BlurMName(){
-            let name_len=/^[A-Za-z\s\s]$/;
+            let name_len=/^[A-Za-z\s\s]+$/;
             let mname= document.getElementById("m_name");
                 if(mname.value.match(name_len)){
                     document.getElementById("Middle_em").style.display = "none";
@@ -102,7 +102,7 @@ Function to check if the name inputted is valid when the input is blurred
 Function to check if the name inputted is valid when the input is focused
 */
     function checkLName(){
-        let name_len=/^[A-Za-z\s]$/;
+        let name_len=/^[A-Za-z\s]+$/;
         let lname= document.getElementById("l_name");
         if(!lname.value.match(name_len)){
             lname.className=lname.className + "field-red";
@@ -116,7 +116,7 @@ Function to check if the name inputted is valid when the input is blurred
 */
 
     function BlurLName(){
-        let name_len=/^[A-Za-z\s]$/;
+        let name_len=/^[A-Za-z\s]+$/;
         let lname= document.getElementById("l_name");
         if(lname.value.match(name_len)){
             lname.className=lname.className.replace("field-red","");
@@ -130,7 +130,7 @@ Function to check if the address inputted is valid when the input is focused
 */
 
     function CheckAddress(){
-        let addr_len=/^[0-9a-zA-Z\s]$/;
+        let addr_len=/^[0-9a-zA-Z\s]+$/;
         let address=document.getElementById("myadd");
         if(!address.value.match(addr_len)){
             document.getElementById("address_em").style.display = "inline";
@@ -141,7 +141,7 @@ Function to check if the address inputted is valid when the input is focused
 Function to check if the address inputted is valid when the input is blurred
 */
     function BlurAddress(){
-        let addr_len=/^[0-9a-zA-Z\s]$/;
+        let addr_len=/^[0-9a-zA-Z\s]+$/;
         let address=document.getElementById("myadd");
           if(address.value.match(addr_len)){
             document.getElementById("address_em").style.display = "none";
