@@ -68,7 +68,7 @@ function valid_mail(){
         return true;
     }
     else{
-        document.getElementById("number_em").style.display = "inline";
+        document.getElementById("mail_em").style.display = "inline";
         return false;
     }
 }
