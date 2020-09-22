@@ -13,7 +13,7 @@ form.addEventListener('submit',e =>{
     validate();
     passvalue();
 
-})
+});
  
 
 
